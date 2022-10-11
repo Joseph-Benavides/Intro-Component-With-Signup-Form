@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-image: url(./images/bg-intro-mobile.png);
+    background-color: rgba(234, 80, 80, 0.77);
+    color: white;
+    background-blend-mode: multiply;
+    text-align: center;
+}
+
+.main-card {
+    margin: 3em auto;
+    padding: 1em;
+    width: 96%;
+    max-width: 400px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main-info {
+    margin-bottom: 3em;
+}
+
+.main-header {
+    margin-bottom: 0.65em;
+}
+
+.main-paragraph {
+    font-weight: 500;
+    line-height: 1.65em;
+}
+
+#form input {
+    margin: 0.5em;
+    padding: 1em;
+    width: 96%;
+    font-family: inherit;
+    font-weight: 500;
+    border: 1px gray solid;
+    border-radius: 4px;
+}
+
+.sign-up-header-btn {
+    margin-bottom: 2em;
+    width: 100%;
+    padding: 1.5em;
+    background-color: rgb(110, 73, 191);
+    color: white;
+    font-family: inherit;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.707);
+}
+
+.sign-up-span {
+    font-weight: 600;    
+}
+
+#form {
+    padding: 1em;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.707);
+}
+
+#submit {
+    margin: 1em 0;
+    padding: 1em;
+    width: 96%;
+    background-color: rgb(72, 195, 121);
+    color: white;
+    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1.25px;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.707);
+}
+
+#submit:hover {
+    cursor: pointer;
+}
+
+.terms-and-services {
+    margin: 0 auto;
+    width: 75%;
+    font-size: 0.7em;
+    color: gray;
+}
+
+.terms-span {
+    color: rgb(247, 110, 98);
+    font-weight: 600;
+}
+
+/* JavaScript */
+.empty-password, .empty-fname, .empty-lname, .not-email {
+    display: none;
+    font-size: 0.75rem;    
+    font-style: italic;
+    font-weight: 500;
+    color: rgb(247, 110, 98);
+}
+
+@media (min-width: 900px) {
+    body {
+        background-image: url(./images/bg-intro-desktop.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .main-card {
+        margin: 0em auto;
+        padding: unset;
+        flex-direction: row;
+        width: 90%;
+        max-width: 1000px;
+        align-items: center;
+    }
+    .main-info {
+        margin-bottom: unset;
+        margin-right: 3em;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+    .main-header {
+        font-size: 2.75rem;
+    }
+    .main-paragraph {
+        font-size: 1.1rem;
+    }
+    .sign-up-section {
+        width: 80em;
+    }
+    #form {
+        padding: 1.5em 1em;
+    }
+    .terms-and-services {
+        margin: 0.75em auto;
+        width: 95%;
+    }
+}
